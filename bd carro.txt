@@ -1,0 +1,16 @@
+drop database carro;
+create database carro;
+use carro;
+create table carro (
+idcarro int auto_increment,
+modelo varchar (50),
+placa varchar (8),
+cor varchar (30),
+km varchar(10),
+preco double,
+fabricante varchar (40),
+categoria varchar (30),
+cambio varchar (30),
+ano varchar(8),
+motor varchar (50),
+primary key (idcarro));

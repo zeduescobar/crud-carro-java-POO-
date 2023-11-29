@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>CRUD CARRO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+
+        <script type="text/javascript">
+            function carregarconsultartodos() {
+                window.location = "/CRUDCARRO/controle_carro?op=LISTAR";
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1" action="Controle_Carro" method="GET">
+            <div>
+            <header>
+            <h1>CRUD CARRO</h1>
+            </header>
+            </div>
+            ID <input type="number" name="txtidcarro"><BR>
+            MODELO <input type="text" name="txtmodelo"><BR>
+            PLACA <input type="text" name="txtplaca"><BR>
+            COR <input type="text" name="txtcor"><BR>
+            KM <input type="text" name="txtkm"><BR><BR>
+            Preço <input type="text" name="txtpreco"><BR><BR>
+            FABRICANTE <input type="text" name="txtfabricante"><BR><BR>
+            CATEGORIA <input type="text" name="txtcategoria"><BR><BR>
+            CAMBIO <input type="text" name="txtcambio"><BR><BR>
+            ANO <input type="text" name="txtano"><BR><BR>
+            MOTOR <input type="text" name="txtmotor"><BR><BR>
+            <input type="submit" name="op" value="CADASTRAR">
+            <input type="submit" name="op" value="DELETAR">
+            <input type="submit" name="op" value="ATUALIZAR">
+            <input type="submit" name="op" value="CONSULTAR_BY_ID">
+            <input type="submit" name="op" value="LISTAR">
+        </form>
+    </body>
+</html>
